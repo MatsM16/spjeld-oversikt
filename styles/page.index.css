@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 225px;
+    padding-right: 32px;
+    scroll-snap-align: center;
+}
+
+.date::before {
+    content: attr(title);
+    opacity: 0.65;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.slot {
+    display: grid;
+    padding: 24px;
+    margin-top: 8px;
+    gap: 24px;
+
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--default);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.slot__type {
+    font-weight: 600;
+}
+.slot__status {
+    justify-self: end;
+    font-size: 0.9rem;
+}
+
+.slot--wanted {
+    background-color: var(--warning);
+    color: var(--on-warning);
+}
+.slot--reserved {
+    background-color: var(--info);
+    color: var(--on-info);
+}
+.slot--taken {
+    background-color: var(--error);
+    color: var(--on-error);
+    cursor: not-allowed;
+}
+.person {
+    font-weight: 600;
+}
+
+@media (min-width: 1300px)
+{
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .date:last-of-type {
+        padding-right: 0;
+    }
+}

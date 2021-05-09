@@ -1,0 +1,15 @@
+{
+    "short_name": "Oversikt",
+    "name": "Oversikt",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#8500ff",
+    "background_color": "#e6e6e6",
+    "icons": [
+        {
+            "src":"logo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

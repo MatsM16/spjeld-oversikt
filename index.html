@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8500ff" />
+    <title>Oversikt</title>
+
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/page.index.css">
+</head>
+<body>
+    <header>
+        <section>Oversikt</section>
+        <section id="name">Mats</section>
+    </header>
+    <main>
+        <section class="date" title="Onsdag 12. mars">
+            <div class="slot slot--taken">
+                <div class="slot__type">Hus</div>
+                <div class="slot__status">Reservert av <span class="person" title="Sander Steffensen">SS</span></div>
+            </div>
+            <div class="slot slot--wanted">
+                <div class="slot__type">Annex</div>
+                <div class="slot__status">Ønsket av <span class="person" title="Mats Dyrøy">MD</span></div>
+            </div>
+            <div class="slot slot--wanted">
+                <div class="slot__type">Jaquzzi</div>
+                <div class="slot__status">Ønsket av <span class="person" title="Mats Dyrøy">MD</span></div>
+            </div>
+        </section>
+        <section class="date" title="Torsdag 13. mars">
+            <div class="slot slot--available">
+                <div class="slot__type">Hus</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+            <div class="slot slot--available">
+                <div class="slot__type">Annex</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+            <div class="slot slot--available">
+                <div class="slot__type">Jaquzzi</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+        </section>
+        <section class="date" title="Fredag 14. mars">
+            <div class="slot slot--available">
+                <div class="slot__type">Hus</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+            <div class="slot slot--reserved">
+                <div class="slot__type">Annex</div>
+                <div class="slot__status">Reservert av deg</div>
+            </div>
+            <div class="slot slot--reserved">
+                <div class="slot__type">Jaquzzi</div>
+                <div class="slot__status">Reservert av deg</div>
+            </div>
+        </section>
+        <section class="date" title="Lørdag 15. mars">
+            <div class="slot slot--available">
+                <div class="slot__type">Hus</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+            <div class="slot slot--taken">
+                <div class="slot__type">Annex</div>
+                <div class="slot__status">Reservert av <span class="person" title="Emil Dyrøy">ED</span></div>
+            </div>
+            <div class="slot slot--taken">
+                <div class="slot__type">Jaquzzi</div>
+                <div class="slot__status">Reservert av <span class="person" title="Emil Dyrøy">ED</span></div>
+            </div>
+        </section>
+        <section class="date" title="Søndag 16. mars">
+            <div class="slot slot--available">
+                <div class="slot__type">Hus</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+            <div class="slot slot--available">
+                <div class="slot__type">Annex</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+            <div class="slot slot--available">
+                <div class="slot__type">Jaquzzi</div>
+                <div class="slot__status">Ledig</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    <script src="./scripts/app.js" type="module"></script>
+    <script src="./scripts/page.index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+main {
+    display: grid;
+    place-items: center;
+}
+
+main > div
+{
+    background-color: var(--default);
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem
+}
+
+main > div > label
+{
+    display: contents;
+    cursor: pointer;
+}
+
+main > div > button
+{
+    display: block;
+    border: 0;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    padding: 8px 0;
+    font: inherit;
+    width: 100%;
+    flex-shrink: 0;
+    grid-column: span 2;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: filter 150ms ease-in-out;
+}
+main > div > button:hover
+{
+    filter: brightness(0.8);
+}
+main > div > button:disabled
+{
+    filter: grayscale(1) brightness(2);
+    cursor: not-allowed;
+}

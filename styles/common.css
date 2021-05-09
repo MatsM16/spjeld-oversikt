@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    background-color: var(--background);
+    color: var(--on-default);
+
+    --background: #e6e6e6;
+    --primary: #8500ff;
+    --on-primary: white;
+    --default: white;
+    --on-default: #484848;
+    --warning: #ff9c36;
+    --on-warning: white;
+    --error: #ff3e3e;
+    --on-error: white;
+    --info: #7a00ff;
+    --on-info: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 70px;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+header section:nth-child(1) {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
