@@ -67,7 +67,7 @@ AppEvent.onload = evt =>
             return `${day} ${date.getDate()}. ${month}`;
         }
 
-        const slots = slotService.getSlots(new Date(2021, 4, 12), new Date(2021, 4, 16));
+        const slots = slotService.getSlots(new Date(2021, 4, 12), new Date(2021, 4, 17));
 
         const days = groupBy(slots, slot => slot.date.getTime())
         const container = document.querySelector("main");
